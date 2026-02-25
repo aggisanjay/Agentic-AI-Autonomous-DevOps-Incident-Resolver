@@ -1,0 +1,19 @@
+{
+    "name": "incident-resolver-worker",
+    "version": "1.0.0",
+    "private": true,
+    "type": "module",
+    "description": "Agent worker for Incident Resolver",
+    "main": "processor.js",
+    "scripts": {
+        "start": "node processor.js",
+        "dev": "node --watch processor.js"
+    },
+    "dependencies": {
+        "@google/genai": "^1.42.0",
+        "bullmq": "^5.13.0",
+        "dotenv": "^16.4.5",
+        "ioredis": "^5.4.1",
+        "socket.io-client": "^4.7.5"
+    }
+}
